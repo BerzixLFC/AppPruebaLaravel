@@ -1,59 +1,63 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 👤 Mi Perfil - Proyecto Laravel UNAB
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descripción
 
-## About Laravel
+Este proyecto es una aplicación web desarrollada con **Laravel** para la asignatura de **Desarrollo Backend**.  
+La aplicación presenta un perfil profesional estructurado mediante rutas dinámicas y vistas Blade, donde se muestra información personal, intereses, habilidades y metas académicas y profesionales.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Características
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+El sistema cuenta con una navegación estructurada mediante rutas de Laravel definidas en el archivo `routes/web.php`, permitiendo el acceso organizado a cada sección del perfil.
 
-## Learning Laravel
+A nivel de diseño, se implementó una interfaz personalizada utilizando CSS propio ubicado en `public/css/estilos.css`, evitando el uso de frameworks externos como Bootstrap con el fin de trabajar estilos desde cero.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Además, el proyecto cuenta con control de versiones mediante Git, manteniendo un historial de 10 commits descriptivos alineados con la línea de tiempo oficial de desarrollo.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Requisitos del Sistema
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Para la correcta ejecución del proyecto se requiere:
 
-### Premium Partners
+- PHP versión 8.1 o superior  
+- Composer instalado en el sistema  
+- Un servidor local como XAMPP o similar  
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## Instalación y Configuración
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Para utilizar el proyecto, primero se debe clonar el repositorio oficial desde GitHub mediante el comando:
 
-## Code of Conduct
+`git clone https://github.com/BerzixLFC/AppPruebaLaravel.git`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Posteriormente, es necesario instalar las dependencias de Laravel utilizando Composer con el comando:
 
-## Security Vulnerabilities
+`composer install`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Una vez instaladas las dependencias, se debe configurar el entorno creando el archivo `.env` a partir del archivo de ejemplo `.env.example`, y luego generar la clave de seguridad de la aplicación usando:
 
-## License
+`php artisan key:generate`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## Ejecución del Proyecto
+
+Para iniciar el servidor de desarrollo local de Laravel, se utiliza el comando:
+
+`php artisan serve`
+
+Después de ejecutar el comando, la aplicación estará disponible en la dirección:
+
+**http://localhost:8000**
+
+---
+
+## Autor
+
+**Nombre:** Camilo Rojas  
+**Docente:** Fabian Enrique Suárez Carvajal  
+**Institución:** Universidad Autónoma de Bucaramanga  
+**Fecha:** Febrero 2026  
